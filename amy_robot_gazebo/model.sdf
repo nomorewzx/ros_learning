@@ -120,6 +120,14 @@
       <child>kinect::link</child>
       <parent>chassis</parent>
     </joint>
+    <include>
+      <uri>model://kinect</uri>
+      <pose>.18 0 0.8 0 0 0</pose>
+    </include>
+    <joint type="fixed" name="carkiect_joint">
+      <child>car_kinect</child>
+      <parent>chassis</parent>
+    </joint>
   </model>
 </sdf>
 
